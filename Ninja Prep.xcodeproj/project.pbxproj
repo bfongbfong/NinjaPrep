@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		5591BCFC25241603009720BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591BCFB25241603009720BB /* AppDelegate.swift */; };
 		5591BCFE25241603009720BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591BCFD25241603009720BB /* SceneDelegate.swift */; };
-		5591BD0025241603009720BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591BCFF25241603009720BB /* ViewController.swift */; };
-		5591BD0325241603009720BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5591BD0125241603009720BB /* Main.storyboard */; };
+		5591BD0025241603009720BB /* NinjaPrepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591BCFF25241603009720BB /* NinjaPrepViewController.swift */; };
 		5591BD0525241605009720BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5591BD0425241605009720BB /* Assets.xcassets */; };
 		5591BD0825241605009720BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5591BD0625241605009720BB /* LaunchScreen.storyboard */; };
+		5591BD1625241728009720BB /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591BD1525241728009720BB /* Fonts.swift */; };
+		5591BD1A252418A4009720BB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591BD19252418A4009720BB /* Colors.swift */; };
+		5591BD1D25241952009720BB /* LogicExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591BD1C25241952009720BB /* LogicExtensions.swift */; };
+		5591BD2025241A08009720BB /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591BD1F25241A08009720BB /* UILabel+Extensions.swift */; };
+		5591BD2325242291009720BB /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = 5591BD2225242291009720BB /* Roboto */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5591BCF825241603009720BB /* Ninja Prep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ninja Prep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5591BCFB25241603009720BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5591BCFD25241603009720BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5591BCFF25241603009720BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5591BD0225241603009720BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5591BCFF25241603009720BB /* NinjaPrepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaPrepViewController.swift; sourceTree = "<group>"; };
 		5591BD0425241605009720BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5591BD0725241605009720BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5591BD0925241605009720BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5591BD1525241728009720BB /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		5591BD19252418A4009720BB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5591BD1C25241952009720BB /* LogicExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicExtensions.swift; sourceTree = "<group>"; };
+		5591BD1F25241A08009720BB /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		5591BD2225242291009720BB /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Roboto; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				5591BCFB25241603009720BB /* AppDelegate.swift */,
 				5591BCFD25241603009720BB /* SceneDelegate.swift */,
-				5591BCFF25241603009720BB /* ViewController.swift */,
-				5591BD0125241603009720BB /* Main.storyboard */,
+				5591BD12252416EC009720BB /* Model */,
+				5591BD13252416F2009720BB /* View */,
+				5591BD10252416E5009720BB /* Controller */,
 				5591BD0425241605009720BB /* Assets.xcassets */,
 				5591BD0625241605009720BB /* LaunchScreen.storyboard */,
 				5591BD0925241605009720BB /* Info.plist */,
+				5591BD2225242291009720BB /* Roboto */,
 			);
 			path = "Ninja Prep";
+			sourceTree = "<group>";
+		};
+		5591BD10252416E5009720BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5591BCFF25241603009720BB /* NinjaPrepViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5591BD12252416EC009720BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5591BD1C25241952009720BB /* LogicExtensions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5591BD13252416F2009720BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5591BD1425241715009720BB /* StyleGuide */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5591BD1425241715009720BB /* StyleGuide */ = {
+			isa = PBXGroup;
+			children = (
+				5591BD1525241728009720BB /* Fonts.swift */,
+				5591BD19252418A4009720BB /* Colors.swift */,
+				5591BD1F25241A08009720BB /* UILabel+Extensions.swift */,
+			);
+			path = StyleGuide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +170,7 @@
 			files = (
 				5591BD0825241605009720BB /* LaunchScreen.storyboard in Resources */,
 				5591BD0525241605009720BB /* Assets.xcassets in Resources */,
-				5591BD0325241603009720BB /* Main.storyboard in Resources */,
+				5591BD2325242291009720BB /* Roboto in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +181,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5591BD0025241603009720BB /* ViewController.swift in Sources */,
+				5591BD1625241728009720BB /* Fonts.swift in Sources */,
+				5591BD1A252418A4009720BB /* Colors.swift in Sources */,
+				5591BD1D25241952009720BB /* LogicExtensions.swift in Sources */,
+				5591BD0025241603009720BB /* NinjaPrepViewController.swift in Sources */,
 				5591BCFC25241603009720BB /* AppDelegate.swift in Sources */,
 				5591BCFE25241603009720BB /* SceneDelegate.swift in Sources */,
+				5591BD2025241A08009720BB /* UILabel+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5591BD0125241603009720BB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5591BD0225241603009720BB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5591BD0625241605009720BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BrandonFong.Ninja-Prep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BrandonFong.Ninja-Prep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
